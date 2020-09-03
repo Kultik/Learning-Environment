@@ -1,0 +1,44 @@
+html {
+
+}
+
+body {
+    width:90%;
+    background-image: linear-gradient(to right, #99C2E6, #A36BD9);
+    margin: auto;
+    /* text-align: center; */
+}
+
+header {
+    display: flex;
+    color: #B3D3DB;
+    justify-content: center;
+    border: 10px inset orangered;
+    border-radius: 20px;
+    /* padding-top: 20px; This just moves the text not the box */
+    margin-top: 1em; /* this did the trick */
+    border-width: 50%;
+    background-color: black;
+}
+
+/* MAIN */
+
+.one {
+    display: flex;
+    justify-content: center;
+    /* padding-right: 500px; */
+    gap: 1em;
+}
+
+.two {
+    display: grid;
+    grid-template-columns:33% 34% 33%;
+    gap: 2em;
+}
+
+.cheat {
+    border: 3px outset magenta;
+    padding:12px;
+    /* border-width:4px;  not useful with first border */
+    /* find a way to countain the border */
+}

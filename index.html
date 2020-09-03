@@ -5,11 +5,15 @@
         <meta>
         <title>Markdown to HTML</title>
         <!-- The <TITLE> tag contains the web page title -->
+        <link rel="stylesheet"
+        type="text/css"
+        href="myStyle.css" />
     </head>
     <body>
         <header>
-            <!-- repreents a group of introductory content. If its a child of <BODY> it defines the global header of a webpage, but if its a child of an <ARTICLE> or <SECTION> it defines a specific header for that section (not to confuse with titles and headers) -->
+            <!-- represents a group of introductory content. If its a child of <BODY> it defines the global header of a webpage, but if its a child of an <ARTICLE> or <SECTION> it defines a specific header for that section (not to confuse with titles and headers) -->
             <h1>Qu'est-ce que le Markdown?</h1>
+            <!-- <meta> would be here -->
         </header>
         
         <nav>
@@ -19,52 +23,65 @@
             </form>
         </nav>
             <!-- <MAIN> Pages main content -->
-        <main>
+        <main class="principal">
             <!-- for content unique to this page : use it once per page directly into <body> shouldn't be nested with other elements -->
+            <p>
                 Le Markdown est un langage de balisage léger créé en 2004 par John Gruber avec l'aide d'Aaron Swartz. Sa synthaxe est <i>simple</i>, <strong>sobre</strong>, et intuitive.
-        <article>
+            </p>
+      
             <!-- encloses a block of related content that makes sens on its own without the rest of the page
             <SECTION>  similar to ARTICLE but for grouping together a single part of the page that constitutes one single piece of functionality. Its considered best practice to begin each section with a heading. S > As or A > Ss -->
-            <h2>Markdown tools</h2>
-            <p>Outre l'édition de texte, Markdown possède de nombreuses fonctionnalités.</p>
-            <h3>Insertion d'image</h3>
-            <p>
-                <img src="https://i.pinimg.com/originals/c4/a6/db/c4a6db3cba16fc150e3db76ca3c326d2.png" alt="BonJovi" height="200" width="250"/>
-            </p>
-            <h3>Insertion de GIF</h3>
-            <p>
-                <img src="https://media1.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy-downsized.gif" alt="Coding Monkey" height="200" width="250" />
-            </p>
+                <h2>Markdown tools</h2>
+                <p>Outre l'édition de texte, Markdown possède de nombreuses fonctionnalités.</p>
+        <article class="one">
+                <article class="sub-section-a">
+                    <h3>Insertion d'image</h3>
+                        <img src="https://i.pinimg.com/originals/c4/a6/db/c4a6db3cba16fc150e3db76ca3c326d2.png" alt="BonJovi" height="200" width="250"/>
+                </article>
+                <article class="sub-section-b">
+                    <h3>Insertion de GIF</h3>
+                        <img src="https://media1.giphy.com/media/QNFhOolVeCzPQ2Mx85/giphy-downsized.gif" alt="Coding Monkey" height="200" width="250" />
+                </article>
         </article>
-        <article>
-            <h2>The Cheat Note</h2>
-            <h4>Headings</h4>
-            <ul>
-                <li>#Heading 1</li>
-                <li>#Heading 2</li>
-                <li>#Heading 3</li>
-            </ul>
-            <h4>Synthaxe</h4>
-            <ul>
-                <li>*This text will be italic*</li>
-                <li>_This will also be italic_</li>
-                <li>~~This text~~~is strikethrough</li>
-                <li>**This text will be bold**</li>
-                <li>__This will also be bold__</li>
-                <li>_You **can** combine them_</li>
-            </ul>
-            <h4>Lists</h4>
-            <h5>Unordered list</h5>
-            <li>* Item 1</li>
-            <li>* Item 2</li>
-            <li>* Item 3</li>
-            <h5>Ordered list</h5>
-            <li>1. Item 1</li>
-            <li>2. Item 2</li>
-            <li>3. Item 3</li>
-            <br>
+        <article class="two">
+            <section class="first">
+                <h2 class="cheat">The Cheat Note</h2>
+                <h4>Headings</h4>
+                <ul>
+                    <li>#Heading 1</li>
+                    <li>#Heading 2</li>
+                    <li>#Heading 3</li>
+                </ul>
+            </section>
+            <section class="second">
+                <h4>Synthaxe</h4>
+                <ul>
+                    <li>*This text will be italic*</li>
+                    <li>_This will also be italic_</li>
+                    <li>~~This text~~~is strikethrough</li>
+                    <li>**This text will be bold**</li>
+                    <li>__This will also be bold__</li>
+                    <li>_You **can** combine them_</li>
+                </ul>
+            </section>
+            <section class="third">
+                <h4>Lists</h4>
+                <h5>Unordered list</h5>
+                <ul>
+                    <li>* Item 1</li>
+                    <li>* Item 2</li>
+                    <li>* Item 3</li>
+                </ul>
+                <h5>Ordered list</h5>
+                <ul>
+                    <li>1. Item 1</li>
+                    <li>2. Item 2</li>
+                    <li>3. Item 3</li>
+                </ul>
+                <br>
+            </section>
         </article>
-        <article>
+        <article class="three">
             <h2>Environnement Optimisé pour l'Apprentissage</h2>
             <p>
                 Le terme «Environnement d’apprentissage»correspond à la convergence de trois facteurs:
